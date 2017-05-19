@@ -1,0 +1,17 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "mkdir -p snapshots",
+    "start": "json-server -w db.json -S snapshots/ -r routes.json"
+  },
+  "keywords": ["Mock", "APIs"],
+  "author": "Francis Wertz <francis.wertz@seisan.com>",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "0.10.1"
+  }
+}
